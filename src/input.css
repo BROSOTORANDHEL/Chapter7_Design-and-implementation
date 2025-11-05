@@ -86,3 +86,374 @@
 .pedro2-note {
   @apply mt-2 relative z-10;
 }
+
+
+
+
+@import url('https://fonts.googleapis.com/css2?family=Londrina+Shadow&display=swap');
+@import "tailwindcss";
+
+
+
+
+@theme {
+--color-background: #FDCFFA;
+--color-banner: #F2AEBB;
+--color-button: #9B5DE0;
+--color-container: #D78FEE;
+--color-footercolor: #6E8CFB;
+--color-backgradient: #daf22ff;
+--color-frontgradient: #9733ee;
+--color-pinkgradient: #E100FF;
+--color-purpgradient: #7F00FF;
+
+@keyframes gradientShift {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+  
+}
+
+
+
+
+}
+
+@theme{
+    --font-display: "Londrina Shadow", sans-serif;
+
+
+}
+
+
+/* HomePage */
+
+
+.body {
+    @apply bg-background
+}
+
+.Links {
+    @apply bg-gradient-to-br from-frontgradient to-container flex flex-row py-3
+}
+
+.Title {
+    @apply xl:ml-4 text-left text-wrap font-bold text-2xl sm:text-2xl basis-0 sm:basis-85 md:basis-100 xl:text-4xl lg:basis-170 xl:-mt-2 ml-4 xl:basis-230 
+}
+
+
+
+.M1 {
+    @apply bg-button px-3 mx-1 rounded-2xl border-2 sm:mx-3 md:px-5 md:mx-5 lg:mx-5 hover:opacity-80 hover:border-red-500 ease-in-out duration-300
+}
+
+
+.design {
+    @apply bg-gradient-to-br from-purpgradient to-pinkgradient my-5 mx-5 text-2xl text-center font-bold xl:text-5xl xl:my-10  xl:py-10 xl:px-10 xl:mx-20 border-solid border-2 rounded-2xl 
+}
+
+
+
+.Objectives {
+    @apply bg-container text-sm font-semibold mb-13 mx-5 px-5 py-2 text-justify xl:mx-20 xl:my-10 xl:px-5 xl:py-5 rounded-2xl xl:text-2xl hover:bg-gradient-to-br hover:from-purpgradient hover:to-pinkgradient transition duration-700 ease-in-out
+}
+
+
+.Contents {
+    @apply flex flex-col
+}
+
+.Preview {
+    @apply mt-5 font-semibold xl:text-xl text-sm xl:mx-5
+}
+
+.txtbold {
+    @apply font-bold xl:text-2xl
+}
+.cntns {
+    @apply bg-container mx-5 text-lg px-10 mb-10 py-5 rounded-2xl hover:bg-gradient-to-br hover:from-purpgradient hover:to-pinkgradient transition duration-700 ease-in-out
+}
+
+.KPP {
+    @apply font-bold xl:text-2xl
+}
+
+
+.KP {
+    @apply bg-container cursor-pointer mx-5 text-lg px-10 mb-10 py-5 rounded-2xl hover:bg-gradient-to-br hover:from-purpgradient hover:to-pinkgradient transition duration-700 ease-in-out text-center
+}
+
+.keypoints {
+    @apply text-center
+}
+
+
+/* 7.4 */
+
+.Background2 {
+    @apply bg-background 
+}
+
+
+.H1Banner {
+  @apply text-center py-2 font-bold text-[25px] md:text-[50px] mx-5 my-4 rounded-2xl drop-shadow-lg font-display border-solid border-4 text-black;
+  background: linear-gradient(270deg, #f9a8d4, #f0abfc, #c084fc, #a5b4fc, #f9a8d4);
+  background-size: 600% 600%;
+  animation: gradientShift 8s ease infinite;
+}
+
+
+
+
+
+.Info1 {
+    @apply bg-container rounded-2xl border-solid border-5 text-xl px-5 py-5 mx-10 sm:mx-20 sm:text-2xl sm:py-5 sm:px-5 md:mx-30 md:py-10 md:px-10 text-justify lg:px-10 lg:mx-40 lg:py-10 
+}
+
+
+.Number {
+    @apply font-bold my-5
+}
+.About {
+    @apply md:text-[40px] font-bold text-[25px] mb-7 underline font-display
+}
+
+
+.Previous {
+    @apply text-center my-5 bg-container mx-40 rounded-2xl border-solid border-3 sm:mx-65 md:mx-105 lg:mx-160 hover:scale-105 hover:opacity-75 ease-in-out duration-100
+}
+
+
+
+
+.Footer8 {
+  @apply mt-50 py-[50px] text-[20px] md:text-[30px] text-center text-black;
+  background: linear-gradient(270deg, #fbcfe8, #f0abfc, #c084fc, #a78bfa, #fbcfe8);
+  background-size: 600% 600%;
+  animation: gradientShift 8s ease infinite;
+}
+
+
+
+/* Eli */
+
+.backgroundeli{
+    @apply bg-[#FDCFFA] m-[5px] md:m-[100px] animate-pulse
+    
+}
+
+.bannereli{
+    @apply bg-[#F2AEBB] text-center py-2 font-bold text-[25px] md:text-[50px] mx-5 my-4 rounded-2xl;
+}
+
+.Infoeli{
+    @apply bg-[#9B5DE0] mx-3 text-left px-2 py-5 rounded-2xl text-[20px] md:text-[30px];
+}
+
+.numbereli{
+    @apply font-bold my-5;
+}
+
+.footereli {
+    @apply bg-[#6E8CFB] mt-[40px] py-[50px] -mx-[5px] md:-mx-[100px] text-[20px] md:text-[30px] text-center;
+}
+
+.tableeli1 {
+    @apply md:mx-25 lg:mx-40 xl:mx-70 my-5 flex flex-wrap;
+}
+
+.tableeli {
+    @apply md:mx-35 lg:mx-37 xl:mx-80 my-5;
+}
+
+.tableeli2 {
+    @apply md:mx-30 lg:mx-70 my-5;
+}
+
+.Next2 {
+    @apply text-center my-5 bg-container mx-40 rounded-2xl border-solid border-3 sm:mx-65 md:mx-70 lg:mx-90 xl:mx-140 hover:scale-105 hover:opacity-75 ease-in-out duration-100
+}
+
+.Previous2 {
+    @apply text-center my-5 bg-container mx-40 rounded-2xl border-solid border-3 sm:mx-65 md:mx-70 lg:mx-90 xl:mx-135 hover:scale-105 hover:opacity-75 ease-in-out duration-100
+}
+
+.Footer{
+     @apply bg-[#6E8CFB] mt-[40px] py-[50px] -mx-[5px] md:-mx-[100px] text-[20px] md:text-[30px] text-center;
+}
+
+
+
+/* trisha */
+
+
+.backgroundtrisha{
+  @apply bg-[#FDCFFA]  m-[5px] md:m-[100px]
+}
+
+.number{
+  @apply font-bold my-5
+}
+
+.bannerrr { 
+  @apply text-5xl md:text-6xl font-extrabold text-center py-8 text-transparent bg-clip-text bg-gradient-to-r from-pink-400 via-purple-500 to-indigo-500 animate-pulse tracking-wide drop-shadow-xl;
+}
+ 
+.aboutt {
+ 
+  @apply text-4xl md:text-5xl text-center mt-8 mb-6 text-black;
+}
+
+.chapter7{
+  @apply  bg-[#F2AEBB] text-center py-2 font-bold text-[25px] md:text-[50px] mx-5 my-4 rounded-2xl drop-shadow-lg mb-10
+}
+
+.system{
+  @apply bg-[#F2AEBB] text-center py-2 font-bold text-[25px] md:text-[50px] mx-5 my-4 rounded-2xl drop-shadow-lg mb-10
+}
+
+.Info11{
+  @apply bg-[#9B5DE0] mx-5 md:px-20 text-left px-10 py-5 rounded-2xl text-[20px] md:text-[30px] drop-shadow-lg 
+}
+
+.Info11 p {
+  @apply text-white leading-relaxed mt-4;
+}
+
+
+.banner23{
+  @apply bg-[#F2AEBB] text-center py-2 font-bold text-[25px] md:text-[50px] mx-5 my-4 rounded-2xl drop-shadow-lg mb-10
+}
+
+.linksss{
+  @apply underline
+}
+
+.linkssss{
+  @apply underline
+}
+
+.arch{
+  @apply bg-[#F2AEBB] text-center py-2 font-bold text-[25px] md:text-[50px] mx-5 my-4 rounded-2xl drop-shadow-lg mb-10
+}
+
+.table3 {
+  @apply my-10 lg:-mx-1
+}
+
+.table4 {
+  @apply my-10 lg:mx-10
+}
+
+.table5 {
+  @apply lg:mx-40 my-10
+}
+
+.table6{
+  @apply lg:mx-35
+}
+
+.table {
+  @apply lg:mx-25
+}
+
+.OBJC {
+  @apply bg-[#F2AEBB] text-center py-2 font-bold text-[25px] md:text-[50px] mx-5 my-4 rounded-2xl drop-shadow-lg mb-10
+}
+
+.DesignModels{
+ @apply bg-[#F2AEBB] text-center py-2 font-bold text-[25px] md:text-[50px] mx-5 my-4 rounded-2xl drop-shadow-lg mb-10
+}
+
+.Interface{
+  @apply bg-[#F2AEBB] text-center py-2 font-bold text-[25px] md:text-[50px] mx-5 my-4 rounded-2xl drop-shadow-lg mb-10
+}
+
+
+.footeeer {
+  @apply bg-[#6E8CFB] mt-[40px] py-[50px] -mx-[5px] md:-mx-[100px] text-[20px] md:text-[30px] text-center;;
+}
+
+.footeeer .SYSTEM {
+  @apply text-3xl mb-4;
+}
+
+.footeeer .SystemGroup p {
+  @apply text-lg md:text-xl;
+}
+
+.Next1 {
+    @apply text-center my-5 bg-container mx-40 rounded-2xl border-solid border-3 sm:mx-70 md:mx-60 lg:mx-170 xl:mx-140 hover:scale-105 hover:opacity-75 ease-in-out duration-100
+}
+
+.returntohome {
+    @apply  text-center my-5 bg-container mx-40 rounded-2xl border-solid border-3 sm:mx-70 md:mx-60 lg:mx-170 xl:mx-140 hover:scale-105 hover:opacity-75 ease-in-out duration-100
+}
+
+
+
+/* Ranny */
+
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap');
+@import "tailwindcss";
+@theme{
+    --font-display: "Archivo Black", sans-serif;
+}
+
+.body-ranny {
+    @apply bg-[#FDCFFA] m-[5px] md:m-[100px] 
+}
+
+.banner-ranny {
+    @apply bg-[#F2AEBB] text-center py-2 font-bold text-[25px] md:text-[50px] mx-5 my-4 rounded-2xl drop-shadow-lg font-display 
+}
+
+.Inforanny {
+    @apply bg-[#9B5DE0] mx-5 px-8 py-5 rounded-2xl text-[20px] md:text-[30px] drop-shadow-lg text-justify 
+}
+
+
+.number1 {
+    @apply font-bold my-5 hover:text-white
+}
+.Followus{
+    @apply md:text-[40px] text-[25px] mb-7 underline
+}
+
+.footerranny {
+    @apply bg-[#6E8CFB] mt-[40px] py-[50px] -mx-[5px] md:-mx-[100px] text-[20px] md:text-[30px] text-center
+}
+
+.textranny{
+    @apply animate-pulse 
+
+}   
+
+.Footer{
+    @apply mt-10 py-[50px] text-[20px] md:text-[30px] text-center text-black bg-blue-500;
+}
+
+@layer utilities {
+  .card-ranny {
+    @apply bg-gradient-to-r from-pink-400 via-purple-500 to-indigo-500 
+           text-white p-6 m-7 rounded-3xl shadow-xl 
+           transition-all duration-500 
+           hover:scale-105 hover:shadow-[0_0_40px_rgba(255,255,255,0.7)]
+  }
+
+  .card-title {
+    @apply text-2xl md:text-4xl font-display font-extrabold mb-3;
+  }
+
+  .card-glow {
+    @apply relative hover:opacity-100;
+  }
+}
+.Next3 {
+@apply text-center my-5 bg-container mx-40 rounded-2xl border-solid border-3 sm:mx-65 md:mx-70 lg:mx-135 hover:scale-105 hover:opacity-75 ease-in-out duration-100;
+    
+}
+.Previous3 {
+@apply text-center my-5 bg-container mx-40 rounded-2xl border-solid border-3 sm:mx-65 md:mx-70 lg:mx-135 hover:scale-105 hover:opacity-75 ease-in-out duration-100;
+    
+}
