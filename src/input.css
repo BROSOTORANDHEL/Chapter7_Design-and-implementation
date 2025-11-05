@@ -1,1 +1,37 @@
 @import "tailwindcss";
+
+.backgroundeli{
+    @apply bg-[#FDCFFA] m-[5px] md:m-[100px] animate-pulse
+    
+}
+
+.bannereli{
+    @apply bg-[#F2AEBB] text-center py-2 font-bold text-[25px] md:text-[50px] mx-5 my-4 rounded-2xl;
+}
+
+.Infoeli{
+    @apply bg-[#9B5DE0] mx-3 text-left px-2 py-5 rounded-2xl text-[20px] md:text-[30px];
+}
+
+.numbereli{
+    @apply font-bold my-5;
+}
+
+.footereli {
+    @apply bg-[#6E8CFB] mt-[40px] py-[50px] -mx-[5px] md:-mx-[100px] text-[20px] md:text-[30px] text-center;
+}
+
+.tableeli1 {
+    @apply md:mx-71 my-5;
+}
+
+.tableeli {
+    @apply md:mx-80 my-5;
+}
+
+.tableeli2 {
+    @apply md:mx-70 my-5;
+}
+.Footer{
+     @apply bg-[#6E8CFB] mt-[40px] py-[50px] -mx-[5px] md:-mx-[100px] text-[20px] md:text-[30px] text-center;
+}
